@@ -3,7 +3,6 @@
 #include <string>
 using namespace std;
 
-//searchWord ищет номер последнего элемента в слове
 int searchWord(string inputLine, int start) {
 	int endOfWord=0;
 	int FEnd;
@@ -18,7 +17,6 @@ int searchWord(string inputLine, int start) {
 	if (FEnd == width) { endOfWord = FEnd-1; }
 	return endOfWord;
 }
-//getWord выводит из строки слово
 int getWord(int start,int end, string Line) {
 	int word = 0;
 	for (int a = start; a <= end; a++) {
@@ -27,7 +25,6 @@ int getWord(int start,int end, string Line) {
 	}
 	return word;
 }
-//wait пропускает пробелы между словами
 int wait(string input, int start) {
 	int endLine = input.length();
 	int end = start;
@@ -36,7 +33,6 @@ int wait(string input, int start) {
 	}
 	return end;
 }
-//sumOfString считает сумму из слов
 int sumOfString(string str) {
 	int length = str.length();
 	int sum = 0;
@@ -57,7 +53,6 @@ int main() {
 	cout << "Enter your sentence: "; getline(cin, str);
 	int sum = sumOfString(str);
 	cout <<"your sum: "<< sum <<"\n";
-
 	system("pause");
 	return 0;
 }
